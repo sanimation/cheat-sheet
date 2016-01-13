@@ -25,9 +25,9 @@ Ajouter les changements réalisés dans le fichier <file> au prochain commit
 ```$ git add -p <file>```
 
 Commiter tous les changements
-```
-$ git commit -a
-```
+
+```$ git commit -a```
+
 Commiter les changements précédemment effectués
 ```
 $ git commit
