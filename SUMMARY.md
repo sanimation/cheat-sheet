@@ -16,4 +16,5 @@
 * [Environnement de développement](dev-env/README.md)
    * [Nitrous](dev-env/nitrous.md)
 * Gestion de documents
+   * Gitbook
 
