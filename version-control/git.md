@@ -52,7 +52,7 @@ Dans le fichier .gitconfig:
   email=you@example.com
 ```
 ## Mise à jour et publication
-List all currently configured remotes
+Lister tous les dépôts distants
 ```
 $ git remote -v
 ```
