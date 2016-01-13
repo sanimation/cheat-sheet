@@ -15,10 +15,11 @@ Changements dans votre environnement de travail
 Changements des fichiers sous controle de version
 
 ```$ git diff```
+
 Ajouter tous les changements courants au prochain commit
-```
-$ git add .
-```
+
+```$ git add .```
+
 Ajouter les changements réalisés dans le fichier <file> au prochain commit
 ```
 $ git add -p <file>
