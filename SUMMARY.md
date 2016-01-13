@@ -9,6 +9,7 @@
    * StrongLoop
 * [Frameworks](dev-frameworks/README.md)
    * Mobile
+   * Front-End
 * [Environnement de développement](dev-env/README.md)
    * [Nitrous](dev-env/nitrous.md)
 
