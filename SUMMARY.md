@@ -6,6 +6,7 @@
 * [Base de données](db/README.md)
    * [MySQL](db/mysql.md)
 * MBAAS
+   * StrongLoop
 * Développement Mobile
 * Environnement de développement
 
