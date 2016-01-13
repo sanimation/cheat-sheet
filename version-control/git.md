@@ -2,11 +2,15 @@
 
 ## Création
 
-$ git clone ssh://user@domain.com/repo.git
-$git init
+```$ git clone ssh://user@domain.com/repo.git```
+```$ git init```
 
 ## Changements en local
-git add .
+```$ git status````
+```$ git diff```
+```$ git add .```
+```$ git add -p <file>```
+
 
 ## Configurer un utilisateur
 ### Conventionnel
