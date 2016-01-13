@@ -9,4 +9,5 @@
    * StrongLoop
 * Développement Mobile
 * Environnement de développement
+   * Nitrous
 
