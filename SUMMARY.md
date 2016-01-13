@@ -4,7 +4,7 @@
 * [Gestion de version](version-control/README.md)
    * [GIT](version-control/git.md)
 * [Base de données](db/README.md)
-   * MySQL
+   * [MySQL](db/mysql.md)
 * MBAAS
 * Développement Mobile
 * Environnement de développement
