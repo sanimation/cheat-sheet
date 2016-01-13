@@ -1,7 +1,9 @@
 # GIT
 ## Création
-```$git clone ssh://user@domain.com/repo.git```
-```$git init```
+```
+$git clone ssh://user@domain.com/repo.git
+$git init
+```
 
 ## Changements en local
 $ git status
