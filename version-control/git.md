@@ -1,9 +1,9 @@
 # GIT
 ## Création
 Cloner un repository existant
-```
-$ git clone ssh://user@domain.com/repo.git
-```
+
+```$ git clone ssh://user@domain.com/repo.git```
+
 Créer un dépôt local
 
 ```$ git init```
