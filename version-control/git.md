@@ -9,13 +9,11 @@ Créer un dépôt local
 ```$ git init```
 ## Changements en local
 Changements dans votre environnement de travail
-```
-$ git status
-```
+
+```$ git status```
 Changements des fichiers sous controle de version
-```
-$ git diff
-```
+
+```$ git diff```
 Ajouter tous les changements courants au prochain commit
 ```
 $ git add .
