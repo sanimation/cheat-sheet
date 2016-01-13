@@ -11,6 +11,7 @@ Créer un dépôt local
 Changements dans votre environnement de travail
 
 ```$ git status```
+
 Changements des fichiers sous controle de version
 
 ```$ git diff```
