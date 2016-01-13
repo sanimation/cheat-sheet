@@ -9,5 +9,5 @@
    * StrongLoop
 * Développement Mobile
 * [Environnement de développement](dev-env/README.md)
-   * Nitrous
+   * [Nitrous](dev-env/nitrous.md)
 
