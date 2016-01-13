@@ -53,20 +53,36 @@ Dans le fichier .gitconfig:
 ```
 ## Mise à jour et publication
 List all currently configured remotes
-```$ git remote -v```
+```
+$ git remote -v
+```
 Show information about a remote
-```$ git remote show <remote>```
+```
+$ git remote show <remote>
+```
 Add new remote repository, named <remote>
-```$ git remote add <shortname> <url>```
+```
+$ git remote add <shortname> <url>
+```
 Download all changes from <remote>,
 but don‘t integrate into HEAD
-```$ git fetch <remote>```
+```
+$ git fetch <remote>
+```
 Download changes and directly
 merge/integrate into HEAD
-```$ git pull <remote> <branch>```
+```
+$ git pull <remote> <branch>
+```
 Publish local changes on a remote
-```$ git push <remote> <branch>```
+```
+$ git push <remote> <branch>
+```
 Delete a branch on the remote
-```$ git branch -dr <remote/branch>```
+```
+$ git branch -dr <remote/branch>
+```
 Publish your tag s
-```$ git push --tags```
+```
+$ git push --tags
+```
