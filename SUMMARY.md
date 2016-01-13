@@ -6,7 +6,7 @@
 * [Base de données](db/README.md)
    * [MySQL](db/mysql.md)
 * [MBAAS](mbaas/README.md)
-   * StrongLoop
+   * [StrongLoop](mbaas/strongloop.md)
 * [Frameworks](dev-frameworks/README.md)
    * Mobile
        * Ionic
