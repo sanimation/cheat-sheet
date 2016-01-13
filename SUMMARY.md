@@ -8,6 +8,7 @@
 * [MBAAS](mbaas/README.md)
    * StrongLoop
 * [Frameworks](dev-frameworks/README.md)
+   * Mobile
 * [Environnement de développement](dev-env/README.md)
    * [Nitrous](dev-env/nitrous.md)
 
