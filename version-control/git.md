@@ -29,7 +29,7 @@ Commiter tous les changements
 ```
 $ git commit -a
 ```
-Commiter previously staged changes
+Commiter les changements précédemment effectués
 ```
 $ git commit
 ```
@@ -37,6 +37,7 @@ Modifier le dernier commit (ne modifie pas les modifications déjà publiées)
 ```
 $ git commit --amend
 ```
+
 ## Configurer un utilisateur
 Quand on utilise git, pour pouvoir faire un commit la première fois, il faut s'identifier.
 ### En ligne de commande
