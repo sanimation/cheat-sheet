@@ -7,7 +7,7 @@
    * [MySQL](db/mysql.md)
 * [MBAAS](mbaas/README.md)
    * StrongLoop
-* Développement Mobile
+* Frameworks
 * [Environnement de développement](dev-env/README.md)
    * [Nitrous](dev-env/nitrous.md)
 
