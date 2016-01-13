@@ -1,10 +1,11 @@
 # GIT
 
-## Créer
+## Création
 
-git init
+$ git clone ssh://user@domain.com/repo.git
+$git init
 
-## Changement en local
+## Changements en local
 git add .
 
 ## Configurer un utilisateur
