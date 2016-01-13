@@ -6,10 +6,12 @@ $git init
 ```
 
 ## Changements en local
+```
 $ git status
 $ git diff
 $ git add .
 $ git add -p <file>
+```
 
 ## Configurer un utilisateur
 ### Conventionnel
