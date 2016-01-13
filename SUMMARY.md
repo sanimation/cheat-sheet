@@ -9,6 +9,7 @@
    * StrongLoop
 * [Frameworks](dev-frameworks/README.md)
    * Mobile
+       * Ionic
    * Front-End
    * Back-end
 * [Environnement de développement](dev-env/README.md)
