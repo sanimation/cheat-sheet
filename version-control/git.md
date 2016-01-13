@@ -45,9 +45,28 @@ git config —global user.email “you@example.com"
 git config —global user.name “Votre nom"
 ```
 ### Via un fichier de config
-Créer un fichier .gitconfig:
+Dans le fichier .gitconfig:
 ```
 [user]
   name=Votre nom
   email=you@example.com
 ```
+## Mise à jour et publication
+List all currently configured remotes
+```$ git remote -v```
+Show information about a remote
+```$ git remote show <remote>```
+Add new remote repository, named <remote>
+```$ git remote add <shortname> <url>```
+Download all changes from <remote>,
+but don‘t integrate into HEAD
+```$ git fetch <remote>```
+Download changes and directly
+merge/integrate into HEAD
+```$ git pull <remote> <branch>```
+Publish local changes on a remote
+```$ git push <remote> <branch>```
+Delete a branch on the remote
+```$ git branch -dr <remote/branch>```
+Publish your tag s
+```$ git push --tags```
