@@ -38,11 +38,16 @@ Modifier le dernier commit (ne modifie pas les modifications déjà publiées)
 $ git commit --amend
 ```
 ## Configurer un utilisateur
+Quand on utilise git, pour pouvoir faire un commit la première fois, il faut s'identifier.
 ### En ligne de commande
 ```
 git config —global user.email “you@example.com"
-git config —global user.name “Your name"
+git config —global user.name “Votre nom"
 ```
-
 ### Via un fichier de config
-
+Créer un fichier .gitconfig:
+```
+[user]
+  name=Votre nom
+  email=you@example.com
+```
