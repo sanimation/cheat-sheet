@@ -15,6 +15,6 @@
    * Back-end
 * [Environnement de développement](dev-env/README.md)
    * [Nitrous](dev-env/nitrous.md)
-* Gestion de documents
+* [Gestion de documents](doc/README.md)
    * Gitbook
 
