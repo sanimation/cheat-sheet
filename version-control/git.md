@@ -1,6 +1,6 @@
 # GIT
 ## Création
-Cloner un repository existant
+Cloner un dépôt existant
 
 ```$ git clone ssh://user@domain.com/repo.git```
 
