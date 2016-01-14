@@ -75,14 +75,13 @@ Download changes and directly merge/integrate into HEAD
 ```$ git pull <remote> <branch>```
 
 Publish local changes on a remote
-```
-$ git push <remote> <branch>
-```
+
+```$ git push <remote> <branch>```
+
 Delete a branch on the remote
-```
-$ git branch -dr <remote/branch>
-```
+
+```$ git branch -dr <remote/branch>```
+
 Publish your tag s
-```
-$ git push --tags
-```
+
+```$ git push --tags```
