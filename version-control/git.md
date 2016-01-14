@@ -52,6 +52,7 @@ Dans le fichier .gitconfig:
 [user]
   name=Votre nom
   email=you@example.com```
+  
 ## Mise à jour et publication
 Lister tous les dépôts distants
 
