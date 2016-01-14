@@ -8,11 +8,11 @@ Créer un dépôt local
 
 ```$ git init```
 ## Changements en local
-Changements dans votre environnement de travail
+Voir les changements dans votre environnement de travail
 
 ```$ git status```
 
-Changements des fichiers sous controle de version
+Voir les changements des fichiers sous controle de version
 
 ```$ git diff```
 
@@ -29,20 +29,23 @@ Commiter tous les changements
 ```$ git commit -a```
 
 Commiter les changements précédemment effectués
-```
-$ git commit
-```
+
+```$ git commit```
+
 Modifier le dernier commit (ne modifie pas les modifications déjà publiées)
-```
-$ git commit --amend
-```
+
+```$ git commit --amend```
+
 ## Configurer un utilisateur
+
 Quand on utilise git, pour pouvoir faire un commit la première fois, il faut s'identifier.
+
 ### En ligne de commande
-```
-git config —global user.email “you@example.com"
-git config —global user.name “Votre nom"
-```
+
+```$ git config —global user.email “you@example.com"```
+
+```$ git config —global user.name “Votre nom"```
+
 ### Via un fichier de config
 Dans le fichier .gitconfig:
 ```
