@@ -55,27 +55,25 @@ Dans le fichier .gitconfig:
 ```
 ## Mise à jour et publication
 Lister tous les dépôts distants
-```
-$ git remote -v
-```
+
+```$ git remote -v```
+
 Show information about a remote
-```
-$ git remote show <remote>
-```
+
+```$ git remote show <remote>```
+
 Add new remote repository, named <remote>
-```
-$ git remote add <shortname> <url>
-```
-Download all changes from <remote>,
-but don‘t integrate into HEAD
-```
-$ git fetch <remote>
-```
-Download changes and directly
-merge/integrate into HEAD
-```
-$ git pull <remote> <branch>
-```
+
+```$ git remote add <shortname> <url>```
+
+Download all changes from <remote>, but don‘t integrate into HEAD
+
+```$ git fetch <remote>```
+
+Download changes and directly merge/integrate into HEAD
+
+```$ git pull <remote> <branch>```
+
 Publish local changes on a remote
 ```
 $ git push <remote> <branch>
