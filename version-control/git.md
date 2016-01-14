@@ -48,7 +48,8 @@ Quand on utilise git, pour pouvoir faire un commit la première fois, il faut s'
 
 ### Via un fichier de config
 Dans le fichier .gitconfig:
-```[user]
+```
+[user]
   name=Votre nom
   email=you@example.com
 ```
