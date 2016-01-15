@@ -3,9 +3,9 @@
 export HOST=0.0.0.0
 PORT=4000 slc arc
 ```
-# Attacher un modèle à une source de données
+## Attacher un modèle à une source de données
 
-# Créer les tables pour les modèles du système
+## Créer les tables pour les modèles du système
 1. Attacher le modèle User à une source de données
 2. Créer le fichier server/create-lb-tables.js
 ```
