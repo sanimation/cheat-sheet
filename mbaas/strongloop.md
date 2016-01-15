@@ -23,5 +23,11 @@ ds.automigrate(lbTables, function(er) {
 $ cd server
 $ node create-lb-tables.js
 ```
-
-
+## Lancer Arc
+```
+$ slc arc
+```
+## Lancer l'application
+```
+$ node .
+```
