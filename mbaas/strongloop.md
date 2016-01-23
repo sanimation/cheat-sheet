@@ -8,6 +8,7 @@ PORT=4000 slc arc
 ## Créer les tables pour les modèles du système
 1. Attacher le modèle User à une source de données
 2. Créer le fichier server/create-lb-tables.js (Si la base de données contient des tables utiliser autoupdate à la place de automigrate)
+
 ```
 var server = require('./server');
 var ds = server.dataSources.db;
@@ -18,11 +19,20 @@ ds.automigrate(lbTables, function(er) {
   ds.disconnect();
 });
 ```
+
 3. Lancer le script
+
 ```
 $ cd server
 $ node create-lb-tables.js
 ```
+
+## Générer le module client Angularjs
+
+```
+$ lb-ng server/server.js client/js/services/lb-services.js
+```
+
 ## Lancer Arc
 ```
 $ slc arc
