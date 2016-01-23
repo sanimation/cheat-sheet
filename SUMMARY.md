@@ -18,5 +18,5 @@
 * [Gestion de documents](doc/README.md)
    * [Gitbook](doc/gitbook.md)
 * [PAAS](paas/README.md)
-   * [OpenShift](paas/openshiftmdmd.md)
+   * [OpenShift](paas/openshift.md)
 
