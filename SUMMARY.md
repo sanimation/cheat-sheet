@@ -18,4 +18,5 @@
 * [Gestion de documents](doc/README.md)
    * [Gitbook](doc/gitbook.md)
 * PAAS
+   * OpenShift
 
