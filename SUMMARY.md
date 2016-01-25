@@ -9,7 +9,7 @@
    * [StrongLoop](mbaas/strongloop.md)
 * [Frameworks](dev-frameworks/README.md)
    * [Mobile](dev-frameworks/mobile/README.md)
-       * Ionic
+       * [Ionic](dev-frameworks/mobile/ionic.md)
    * Front-End
        * Foundation
    * Back-end
