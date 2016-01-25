@@ -27,10 +27,10 @@ $ cd server
 $ node create-lb-tables.js
 ```
 
-## Générer le module client Angularjs
+## Générer les services avec le SDK loopback Angularjs
 
 ```
-$ lb-ng server/server.js client/js/services/lb-services.js
+$ lb-ng ./server/server.js ./client/js/services.js
 ```
 
 ## Lancer Arc
