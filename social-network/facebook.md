@@ -8,5 +8,4 @@
 - Sélectionnez la catégorie.
 - Donnez un nom à votre appli et l'URL de votre site.
 - Passez le démarrage rapide pour obtenir votre "App ID" et "App Secret", qui sont dans "Settings"
-- Votre application peut ne pas fonctionner si les paramètres the settings are missing a contact email and/or "Site URL".
-if you are testing locally, you can simply use localhost:[port#] as your "Site URL".
+- Votre application peut ne pas fonctionner si il manque un email de contact ou l'URL de votre site. Si vous testez en local vous pouvez mettre come URL localhost:[port#]
