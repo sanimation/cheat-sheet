@@ -1,3 +1,3 @@
 # Ma super antisèche
 
-Contient les commandes des outils les plus utilisés en dev.
+Contient les commandes des outils que j'utilise en dev.
