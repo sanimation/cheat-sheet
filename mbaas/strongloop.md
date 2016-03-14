@@ -51,7 +51,7 @@ $ node .
 ### Envoyer un Push
 Dans le champe devicequery
 ```
-{"appId": "fr.efficiencesoftware.newsfeed"}
+{"appId": "fr.efficiencesoftware.newsfeed", "subscriptions": [2,3]}
 ```
  
 Dans le champ notification:
