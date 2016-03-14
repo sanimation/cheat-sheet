@@ -41,3 +41,22 @@ $ slc arc
 ```
 $ node .
 ```
+
+## L'explorer
+### Filtrer les résultats du find
+```
+{"filter": {"order": "id DESC", "limit": "10"}}
+```
+
+### Envoyer un Push
+Dans le champe devicequery
+```
+{"appId": "fr.efficiencesoftware.newsfeed"}
+```
+ 
+Dans le champ notification:
+```
+{
+"alert": "test"
+}
+```
