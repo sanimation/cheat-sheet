@@ -50,6 +50,9 @@ $ node .
 ```
 {"where": {"subscriptions": ["2","3"]}}
 ```
+```
+{"where": {"serviceId" : "2"}, "fields": {"subscriberId": "true"}}
+```
 
 ### Envoyer un Push
 Dans le champe devicequery
