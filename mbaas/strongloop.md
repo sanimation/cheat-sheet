@@ -47,6 +47,9 @@ $ node .
 ```
 {"filter": {"order": "id DESC", "limit": "10"}}
 ```
+```
+{"where": {"subscriptions": ["2","3"]}}
+```
 
 ### Envoyer un Push
 Dans le champe devicequery
