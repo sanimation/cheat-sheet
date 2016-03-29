@@ -47,3 +47,8 @@ $ cd app-root/repo/server
 $ node create-lb-tables.js
 ```
 
+## Log
+
+```
+$ rhc tail -a myapp
+```
