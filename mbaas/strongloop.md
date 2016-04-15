@@ -43,7 +43,7 @@ $ node .
 ```
 
 ```
-$ DEBUG=loopback:datasource node .
+$ DEBUG=loopback:security:* node .
 ```
 
 ## L'explorer
