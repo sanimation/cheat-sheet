@@ -42,9 +42,7 @@ $ slc arc
 $ node .
 ```
 
-```
-$ DEBUG=loopback:datasource node .
-```
+```$ DEBUG=loopback:datasource node .```
 
 ## L'explorer
 ### Filtrer les résultats du find
