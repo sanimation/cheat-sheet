@@ -66,3 +66,7 @@ Dans le champ notification:
 "alert": "test"
 }
 ```
+
+### login
+
+```{"email":"foo@bar.com","password":"foobar"}```
