@@ -42,7 +42,8 @@ $ slc arc
 $ node .
 ```
 
-```$ DEBUG=loopback:datasource node .
+```
+$ DEBUG=loopback:datasource node .
 ```
 
 ## L'explorer
