@@ -59,7 +59,7 @@ $ DEBUG=loopback:security:* node .
 ```
 
 ### Envoyer un Push
-Dans le champe devicequery
+Dans le champ devicequery
 ```
 {"appId": "fr.efficiencesoftware.newsfeed", "subscriptions": [2,3]}
 ```
