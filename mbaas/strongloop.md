@@ -63,6 +63,8 @@ Dans le champ devicequery
 ```
 {"appId": "fr.efficiencesoftware.newsfeed", "subscriptions": [2,3]}
 ```
+
+subscriptions: {inq: subscriptions}
  
 Dans le champ notification:
 ```
