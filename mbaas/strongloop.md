@@ -58,6 +58,10 @@ $ DEBUG=loopback:security:* node .
 {"where": {"serviceId" : "2"}, "fields": {"subscriberId": "true"}}
 ```
 
+```
+{"include": "service"}
+```
+
 ### Envoyer un Push
 Dans le champ devicequery
 ```
