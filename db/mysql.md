@@ -18,12 +18,8 @@
 
 ## Lister les tables
 
-```
-$ SHOW TABLES
-```
+```$ SHOW TABLES```
 
 ## Créer une table
 
-```
-$ CREATE DATABASE dbname;
-```
+```$ CREATE DATABASE dbname;```
