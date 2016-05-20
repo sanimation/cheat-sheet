@@ -77,6 +77,6 @@ Dans le champ notification:
 }
 ```
 
-### login
+### Login
 
 ```{"email":"foo@bar.com","password":"foobar"}```
