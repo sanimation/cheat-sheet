@@ -63,26 +63,26 @@ Visualiser plus d'informations à propos d'un dépôt distant particulier
 
 ```$ git remote show <remote>```
 
-Add new remote repository, named <remote>
+Ajouter un dépôt distant
 
 ```$ git remote add <shortname> <url>```
 
-Download all changes from <remote>, but don‘t integrate into HEAD
+Récupérer tous les changements du dépôt distant sans l'intégrer à HEAD
 
 ```$ git fetch <remote>```
 
-Download changes and directly merge/integrate into HEAD
+Récupérer tous les changements du dépôt distant et merger/integrer à HEAD
 
 ```$ git pull <remote> <branch>```
 
-Publish local changes on a remote
+Publier vos modifications sur le dépôt distant
 
 ```$ git push <remote> <branch>```
 
-Delete a branch on the remote
+Supprimer une branche du dépôt distant
 
 ```$ git branch -dr <remote/branch>```
 
-Publish your tag s
+Publier les tags sur le dépôt distant
 
-```$ git push --tags```
+```$ git push <remote> --tags```
