@@ -14,9 +14,8 @@
 
 ## Changer de base de données
 
-```
-$ use <dbname>
-```
+```$ use <dbname>```
+
 ## Lister les tables
 
 ```
