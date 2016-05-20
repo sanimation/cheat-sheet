@@ -10,8 +10,7 @@
 
 ## Lister les bases de données
 
-```
-$ SHOW DATABASES
+```$ SHOW DATABASES
 ```
 
 ## Changer de base de données
