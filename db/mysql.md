@@ -2,14 +2,11 @@
 
 ## Mode ligne de commande 
 
-```
-$ mysql -u root -p
-```
+```$ mysql -u root -p```
 
 ## Changer de mot de passe
-```
-$mysqladmin -u root -p password NEWPASSWORD
-```
+
+```$mysqladmin -u root -p password NEWPASSWORD```
 
 ## Lister les bases de données
 
