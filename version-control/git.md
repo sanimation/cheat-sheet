@@ -1,4 +1,5 @@
 # GIT
+Cf. la documentation complète [içi](https://git-scm.com)
 ## Création
 Cloner un dépôt existant
 
@@ -58,7 +59,7 @@ Lister tous les dépôts distants
 
 ```$ git remote -v```
 
-Show information about a remote
+Visualiser plus d'informations à propos d'un dépôt distant particulier  
 
 ```$ git remote show <remote>```
 
