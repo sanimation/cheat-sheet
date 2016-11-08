@@ -68,3 +68,25 @@ Statisticians use the concept of "standard deviation" from the mean to describe 
 
 sd\(vector\)
 
+## Factors
+
+Pour grouper par catégorie
+
+factor\(vector\)
+
+levels\(vector\)
+
+Utiliser différents items pour les points avec pch:
+
+types&lt;-factor\(vector\)
+
+plot\(x,y, pch=as.integer\(types\)\)
+
+La légende:
+
+legend\(position, vector, pch\)
+
+legend\("topright", c\("gems", "gold", "silver"\), pch=1:3\)
+
+
+
