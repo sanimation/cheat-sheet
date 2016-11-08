@@ -90,5 +90,13 @@ legend\("topright", c\("gems", "gold", "silver"\), pch=1:3\)
 
 ## Data Frames
 
+Pour structurer les données \(comme dans une BD ou une feuille excel\)
+
+treasure &lt;- data.frame\(weights, prices, types\)
+
+Pour accéder aux données d'une colonne
+
+treasure\[\["weights"\]\] ou treasure$weights
+
 
 
