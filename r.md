@@ -10,9 +10,9 @@ names\(v\)&lt;-c\("un","deux","trois"\)
 
 ### Visualisation
 
-barplot
+barplot\(vector\)
 
-plot
+plot\(vector\)
 
 ## Matrices
 
@@ -38,13 +38,27 @@ plusieurs colonnes
 
 p\[,2:4\]
 
-Visualisation
+### Visualisation
 
 contour\(matrix\)
 
-persp\(matrxix\)
+Vue 3D
+
+persp\(matrix\)
 
 persp\(matrix, expand=0.2\)
 
+Carte de chaleur
 
+image\(matrix\)
+
+## Statistics
+
+mean\(vector\)
+
+plot\(vector\)
+
+If we draw a line on the plot representing the mean, we can easily compare the various values to the average. The `abline` function can take an `h` parameter with a value at which to draw a horizontal line, or a `v` parameter for a vertical line. 
+
+abline\(h = mean\(vector\)\)
 
