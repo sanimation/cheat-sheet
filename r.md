@@ -98,5 +98,7 @@ Pour accéder aux données d'une colonne
 
 treasure\[\["weights"\]\] ou treasure$weights
 
+### Charger des fichiers
 
+read.csv\("targets.csv"\)
 
