@@ -64,3 +64,7 @@ abline\(h = mean\(vector\)\)
 
 median\(vector\)
 
+Statisticians use the concept of "standard deviation" from the mean to describe the range of typical values for a data set. For a group of numbers, it shows how much they typically vary from the average value. To calculate the standard deviation, you calculate the mean of the values, then subtract the mean from each number and square the result, then average those squares, and take the square root of that average.
+
+sd\(vector\)
+
