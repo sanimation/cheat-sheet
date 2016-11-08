@@ -2,6 +2,14 @@
 
 https:\/\/www.r-project.org\/
 
+Bases
+
+Fonctions
+
+sum\(1,3,5\)
+
+rep\("Yo ho!", times = 3\)
+
 ## Vector
 
 v &lt;- c\(1,2,3\)
