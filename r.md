@@ -56,9 +56,9 @@ image\(matrix\)
 
 mean\(vector\)
 
-plot\(vector\)
+barplot\(vector\)
 
-If we draw a line on the plot representing the mean, we can easily compare the various values to the average. The `abline` function can take an `h` parameter with a value at which to draw a horizontal line, or a `v` parameter for a vertical line. 
+If we draw a line on the plot representing the mean, we can easily compare the various values to the average. The `abline` function can take an `h` parameter with a value at which to draw a horizontal line, or a `v` parameter for a vertical line.
 
 abline\(h = mean\(vector\)\)
 
