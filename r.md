@@ -2,13 +2,27 @@
 
 https:\/\/www.r-project.org\/
 
-Bases
+## Bases
 
-Fonctions
+### Fonctions
 
 sum\(1,3,5\)
 
 rep\("Yo ho!", times = 3\)
+
+sqrt\(16\)
+
+Help
+
+help\(functionname\)
+
+Fichiers
+
+list.files\(\)
+
+Exécuter un script
+
+source\("bottle1.R"\)
 
 ## Vector
 
