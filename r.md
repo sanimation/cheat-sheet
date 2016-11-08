@@ -26,3 +26,13 @@ p&lt;-1:8
 
 dim\(p\)&lt;-c\(2,4\)
 
+p\[2,3\]
+
+ligne entiere
+
+p\[2,\]
+
+plusieurs colonnes
+
+p\[,2:4\]
+
