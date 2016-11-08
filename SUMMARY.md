@@ -23,4 +23,6 @@
     * [OpenShift](paas/openshift.md)
 * [Réseaux sociaux](social-network/README.md)
     * [Facebook](social-network/facebook.md)
+* [Language](language/README.md)
+    * [R](r.md)
 
