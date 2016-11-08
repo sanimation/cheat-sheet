@@ -8,6 +8,8 @@ seq\(1,10,0.5\)
 
 names\(v\)&lt;-c\("un","deux","trois"\)
 
+### Visualisation
+
 barplot
 
 plot
@@ -35,4 +37,14 @@ p\[2,\]
 plusieurs colonnes
 
 p\[,2:4\]
+
+Visualisation
+
+contour\(matrix\)
+
+persp\(matrxix\)
+
+persp\(matrix, expand=0.2\)
+
+
 
