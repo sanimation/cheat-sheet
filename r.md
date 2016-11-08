@@ -62,3 +62,5 @@ If we draw a line on the plot representing the mean, we can easily compare the v
 
 abline\(h = mean\(vector\)\)
 
+median\(vector\)
+
