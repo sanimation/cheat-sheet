@@ -104,3 +104,15 @@ read.csv\("targets.csv"\)
 
 read.table\("infantry.txt", sep="\t", header=TRUE\)
 
+### Merger des fichiers
+
+piracy &lt;- read.csv\("piracy.csv"\)
+
+gdp &lt;- read.table\("gdp.txt", sep="\t", header=TRUE\)
+
+countries&lt;-merge\(x = gdp, y = piracy\)
+
+Tester la corrélation entre 2 vecteurs:
+
+cor.test\(countries$GDP, countries$Piracy\)
+
