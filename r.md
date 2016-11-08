@@ -118,6 +118,8 @@ Tester la corrélation entre 2 vecteurs:
 
 cor.test\(countries$GDP, countries$Piracy\)
 
+Prédiction
+
 We have more countries represented in our GDP data than we do our piracy rate data. If we know a country's GDP, can we use that to estimate its piracy rate?
 
 We can, if we calculate the linear model that best represents all our data points \(with a certain degree of error\). The `lm` function takes a _model formula_, which is represented by a _response variable_ \(piracy rate\), a tilde character \(`~`\), and a _predictor variable_ \(GDP\). \(Note that the response variable comes _first_.\)
