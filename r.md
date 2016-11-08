@@ -88,5 +88,7 @@ legend\(position, vector, pch\)
 
 legend\("topright", c\("gems", "gold", "silver"\), pch=1:3\)
 
+## Data Frames
+
 
 
