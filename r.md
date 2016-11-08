@@ -12,11 +12,11 @@ rep\("Yo ho!", times = 3\)
 
 sqrt\(16\)
 
-Help
+### Help
 
 help\(functionname\)
 
-Fichiers
+### Fichiers
 
 list.files\(\)
 
