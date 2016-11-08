@@ -102,3 +102,5 @@ treasure\[\["weights"\]\] ou treasure$weights
 
 read.csv\("targets.csv"\)
 
+read.table\("infantry.txt", sep="\t", header=TRUE\)
+
