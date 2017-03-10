@@ -26,8 +26,10 @@
 
 ## Taille d'une base de donnée
 
-```SELECT table_schema "DB Name",   
-Round(Sum(data_length + index_length) / 1024 / 1024, 1) "DB Size in MB" 
+```
+SELECT table_schema "DB Name", 
+    Round(Sum(data_length + index_length) / 1024 / 1024, 1) "DB Size in MB" 
 FROM   information_schema.tables
-GROUP  BY table_schema;``` 
+GROUP  BY table_schema;
+``` 
 
