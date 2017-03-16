@@ -1,25 +1,33 @@
 # MySQL
 
-## Mode ligne de commande 
+## Mode ligne de commande
 
-```$ mysql -u root -p```
+`$ mysql -u root -p`
 
 ## Changer de mot de passe
 
-```$mysqladmin -u root -p password NEWPASSWORD```
+`$mysqladmin -u root -p password NEWPASSWORD`
 
 ## Lister les bases de données
 
-```$ SHOW DATABASES```
+`$ SHOW DATABASES`
 
 ## Changer de base de données
 
-```$ use <dbname>```
+`$ use <dbname>`
 
 ## Lister les tables
 
-```$ SHOW TABLES```
+`$ SHOW TABLES`
 
 ## Créer une table
 
-```$ CREATE DATABASE dbname;```
+`$ CREATE DATABASE dbname;`
+
+Changer le type de données d'une colonne
+
+`$ ALTER TABLE tablename MODIFY columnname INTEGER;`
+
+  
+
+
