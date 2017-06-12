@@ -30,3 +30,5 @@ and (r.rdb$system_flag is null or r.rdb$system_flag = 0)
 order by 1, f.rdb$field_position;
 ```
 
+# Extract
+https://www.sqlmanager.net/en/products/ibfb/dataexport/buy
