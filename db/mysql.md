@@ -24,7 +24,6 @@
 
 `$ CREATE DATABASE dbname;`
 
-<<<<<<< HEAD
 ## Taille d'une base de donnée
 
 ```
@@ -33,12 +32,6 @@ SELECT table_schema "DB Name",
 FROM   information_schema.tables
 GROUP  BY table_schema;
 ``` 
-=======
 Changer le type de données d'une colonne
 
 `$ ALTER TABLE tablename MODIFY columnname INTEGER;`
-
-  
-
->>>>>>> 48e2380422694cb32b9c67548a0b621debd4dd2b
-
