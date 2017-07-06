@@ -28,6 +28,39 @@ Changer le type de données d'une colonne
 
 `$ ALTER TABLE tablename MODIFY columnname INTEGER;`
 
+## Remote access
+
+1 - first check status:
+
+```
+netstat -tulpen
+```
+
+2 - modify your configuration :
+
+```
+ vi /etc/mysql/my.cnf
+ bind-address = 0.0.0.0
+```
+
+3 - entry mysql to give privileges
+ 
+
+```
+GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%'IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+```
+
+
+4 - restart mysql
+
+```
+ /etc/init.d/mysql restart
+
+```
+
+
   
 
 
