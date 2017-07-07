@@ -13,7 +13,7 @@
   * [Mobile](dev-frameworks/mobile/README.md)
     * [Ionic](dev-frameworks/mobile/ionic.md)
   * Front-End
-    * Foundation
+    * [Foundation](dev-frameworks/front-end/foundation.md)
   * [Back-end](dev-frameworks/backend/README.md)
     * [Node.Js](dev-frameworks/backend/nodejs.md)
 * [Environnement de développement](dev-env/README.md)
@@ -25,5 +25,7 @@
 * [Réseaux sociaux](social-network/README.md)
   * [Facebook](social-network/facebook.md)
 * [Language](language/README.md)
-  * [R](r.md)
+  * [R](language/r.md)
+* [Devops](devops/README.md)
+  * [Docker](devops/docker.md)
 
