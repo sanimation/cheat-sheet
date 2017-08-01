@@ -60,7 +60,6 @@ GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%'IDENTIFIED BY 'mypassword' WITH GRANT
 FLUSH PRIVILEGES;
 ```
 
-
 4 - restart mysql
 
 ```
@@ -71,7 +70,8 @@ FLUSH PRIVILEGES;
 ## Importer un fichier csv
 
 ```
-mysqlimport --ignore-lines=1 --fields-terminated-by=, --verbose --local -u [user] -p [database] /path/to/address.csv
+
+
 ```
 * `--ignore-lines` will ignore the number of specified lines, in this case we are omiting the first one as it is the header of the table
 * `--fields-terminated-by` Will tell the command what character is the delimiter one, a comma in this case.
@@ -87,5 +87,3 @@ mysqlimport --ignore-lines=1 --fields-terminated-by=, --verbose --local -u [user
 ```
 mysql -u username -p database_name < file.sql
 ```
-
-
