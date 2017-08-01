@@ -70,8 +70,7 @@ FLUSH PRIVILEGES;
 ## Importer un fichier csv
 
 ```
-
-
+mysqlimport --ignore-lines=1 --fields-terminated-by=, --verbose --local -u [user] -p [database] /path/to/address.csv
 ```
 * `--ignore-lines` will ignore the number of specified lines, in this case we are omiting the first one as it is the header of the table
 * `--fields-terminated-by` Will tell the command what character is the delimiter one, a comma in this case.
