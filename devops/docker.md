@@ -36,3 +36,18 @@ $ mysql -h localhost -P 3306 -u root
 ```
 
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+## Docker attach
+
+The answer is docker's attach command. So for my example above the solution will:
+
+$ sudo docker attach 665b4a1e17b6 #by ID
+or
+$ sudo docker attach loving_heisenberg #by Name
+$ root@665b4a1e17b6:/# 
+UPDATE: (docker >= 1.3) Thanks to WiR3D user who suggested another way to get container's shell. If we use attach we can use only one instance of shell. So if we want open new terminal with new instance of container's shell, we just need run the following:
+
+$ sudo docker exec -i -t 665b4a1e17b6 /bin/bash #by ID
+or
+$ sudo docker exec -i -t loving_heisenberg /bin/bash #by Name
+$ root@665b4a1e17b6:/#
