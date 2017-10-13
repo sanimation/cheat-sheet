@@ -1,3 +1,49 @@
+# Docker attach
+
+The answer is docker's attach command. So for my example above the solution will:
+By ID
+
+```
+$ sudo docker attach 665b4a1e17b6
+```
+
+or by Name
+
+```
+$ sudo docker attach loving_heisenberg
+```
+
+
+```
+$ root@665b4a1e17b6:/# 
+```
+
+UPDATE: (docker >= 1.3) Thanks to WiR3D user who suggested another way to get container's shell. If we use attach we can use only one instance of shell. So if we want open new terminal with new instance of container's shell, we just need run the following:
+
+By ID
+
+```
+$ sudo docker exec -i -t 665b4a1e17b6 /bin/bash
+```
+or by Name
+
+```
+$ sudo docker exec -i -t loving_heisenberg /bin/bash
+```
+
+```
+$ root@665b4a1e17b6:/#
+```
+
+# Deploying changes
+When you make changes to your app code, you’ll need to rebuild your image and recreate your app’s containers. To redeploy a service called web, you would use:
+
+`$ docker-compose build web`
+
+`$ docker-compose up --no-deps -d web`
+
+This will first rebuild the image for web and then stop, destroy, and recreate just the web service. The --no-deps flag prevents Compose from also recreating any services which web depends on.
+
 # Connect to Docker MySQL container from localhost?
 
 ## Using docker-compose up
@@ -36,18 +82,3 @@ $ mysql -h localhost -P 3306 -u root
 ```
 
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
-
-## Docker attach
-
-The answer is docker's attach command. So for my example above the solution will:
-
-$ sudo docker attach 665b4a1e17b6 #by ID
-or
-$ sudo docker attach loving_heisenberg #by Name
-$ root@665b4a1e17b6:/# 
-UPDATE: (docker >= 1.3) Thanks to WiR3D user who suggested another way to get container's shell. If we use attach we can use only one instance of shell. So if we want open new terminal with new instance of container's shell, we just need run the following:
-
-$ sudo docker exec -i -t 665b4a1e17b6 /bin/bash #by ID
-or
-$ sudo docker exec -i -t loving_heisenberg /bin/bash #by Name
-$ root@665b4a1e17b6:/#
