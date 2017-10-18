@@ -34,23 +34,20 @@
 ```
 SELECT table_schema "DB Name", 
     Round(Sum(data_length + index_length) / 1024 / 1024, 1) "DB Size in MB" 
-FROM   information_schema.tables
-GROUP  BY table_schema;
+FROM information_schema.tables
+GROUP BY table_schema;
 ``` 
 ## Remote access
 
 1 - first check status:
 
-```
-netstat -tulpen
-```
+`$ netstat -tulpen`
 
 2 - modify your configuration :
 
-```
- vi /etc/mysql/my.cnf
- bind-address = 0.0.0.0
-```
+`$ vi /etc/mysql/my.cnf`
+
+`bind-address = 0.0.0.0`
 
 3 - entry mysql to give privileges
  
