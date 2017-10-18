@@ -102,27 +102,47 @@ $ docker run -d --name efficloud-02 -p 2222:22 efficloud_template
 ```
 
 ### Lancer un container de nom efficloud-03 depuis l'image efficloud_template en mode daemon avec ....
+
+```
 $ docker run -d -P --name efficloud-03 efficloud_template
+```
 
 ### Savoir sur quel port du host est redirigé le port 22 du Container efficloud-03
-docker port efficloud-03 22
 
-Lancer un container de nom efficloud-04 depuis l'image efficloud_template en mode interactif avec renvoi de port 22 et mount vol
-docker run -i --name efficloud-04 -p 2224:22 -v /DockerData:/datapps -t efficloud_template /bin/bash
+```
+$ docker port efficloud-03 22
+```
+
+### Lancer un container de nom efficloud-04 depuis l'image efficloud_template en mode interactif avec renvoi de port 22 et mount vol
+
+```
+$ docker run -i --name efficloud-04 -p 2224:22 -v /DockerData:/datapps -t efficloud_template /bin/bash
+```
 
 ### Monter dossier /export de host dans dossier /datapps du container
-docker run -d -p 2222:22 -v /export:/datapps container_id
+
+```
+$ docker run -d -p 2222:22 -v /export:/datapps container_id
+```
 
 ### Voir la sortie d'un container executer en mode Detached
-docker logs [Container iD]
-docker logs -f [Container iD]
-docker logs container_name | tail
 
-docker -diff container
+```
+$ docker logs [Container iD]
+$ docker logs -f [Container iD]
+$ docker logs container_name | tail
+```
+
+```
+$ docker -diff container
+```
 
 ### S'attacher à un container
-docker attach efficloud-01
-docker attach debian-01 —sig-proxy=false 75
+
+```
+$ docker attach efficloud-01
+$ docker attach debian-01 —sig-proxy=false 75
+```
 
 ### Se détacher du container
 Ctrl-p + Ctrl-q
@@ -134,23 +154,28 @@ $ ssh -p 2224 root@localhost
 ```
 
 ### Lancer une commande sur un container actif
-docker exec -d container_name touch /tmp/myfile
-docker exec -it container_name /bin/bash
 
-####################
-#### DOCKERFILE ####
-####################
+```
+$ docker exec -d container_name touch /tmp/myfile
+$ docker exec -it container_name /bin/bash
+```
 
-#Création de son Dockerfile pour une image que l'on nommera efficloud-template
-mkdir -p /var/lib/docker/image/efficloud-template
-cd /var/lib/docker/image/efficloud-template
+## DOCKERFILE
 
-touch Dockerfile
+### Création de son Dockerfile pour une image que l'on nommera efficloud-template
 
-ls
+```
+$ mkdir -p /var/lib/docker/image/efficloud-template
+$ cd /var/lib/docker/image/efficloud-template
 
-sudo nano dockerfile
+$ touch Dockerfile
 
+$ ls
+
+$ sudo nano dockerfile
+```
+
+```
 MAINTAINER : nom et mail de mainteneur du conteneur
 FROM : image de base (ubuntu, debian)
 VOLUME : Point de montage
@@ -161,10 +186,13 @@ ADD : Copier un fichier du répertoire courant dans le filesystem du conteneur.
 USER : utilisateur qui exécute les commandes dans le conteneur.
 EXPOSE : Port(s) à exposer à l’exterieur.
 DIFF:
+```
 
-#Contruire son Image 
-docker build -t efficloud_template -f dockerfile . (Le Point est important à la fin)
+### Construire son Image 
 
+```
+$ docker build -t efficloud_template -f dockerfile . (Le Point est important à la fin)
+```
 
 ## Docker attach
 
