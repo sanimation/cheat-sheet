@@ -2,7 +2,7 @@
 ## Mode ligne de commande
 Se connecter à la base via psql
 
-`$ psql -U postgres`
+`$ psql -U <user_name>`
 
 ## Backup Your Redash Database and Restore It on a Different Server
 
