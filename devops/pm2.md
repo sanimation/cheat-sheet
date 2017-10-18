@@ -90,7 +90,7 @@ $ pm2 restart all
 Will 0s downtime reload (for NETWORKED apps)
 
 ```
-pm2 reload all
+$ pm2 reload all
 ```
 
 Stop specific process id
