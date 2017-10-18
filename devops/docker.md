@@ -43,7 +43,7 @@ $ sudo docker exec -i -t <container-name> /bin/bash
 ```
 
 ```
-$ root@665b4a1e17b6:/#
+$ root@<container-id>:/#
 ```
 
 # Deploying changes
