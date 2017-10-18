@@ -212,30 +212,28 @@ ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run
 
 # Install Docker Ubuntu 1604
 
-
-
 ```
 $ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
 $ echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc/apt/sources.list.d/docker.list
-sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
-sudo apt-get update
-sudo apt-get install docker-engine
-sudo service docker start
-sudo usermod -aG docker $USER
-members docker
+$ sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+$ sudo apt-get update
+$ sudo apt-get install docker-engine
+$ sudo service docker start
+$ sudo usermod -aG docker $USER
+$ members docker
 
-sudo nano /etc/default/grub
+$ sudo nano /etc/default/grub
 	GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"
-sudo update-grub
-reboot
+$ sudo update-grub
+$ reboot
 ```
 
-
-
 # Start Docker on Boot
-sudo systemctl enable docker
 
-docker info
+```
+$ sudo systemctl enable docker
+$ docker info
+```
 
 # Upgrade Docker
 sudo apt-get upgrade docker-engine
