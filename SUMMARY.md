@@ -7,6 +7,7 @@
   * [MySQL](db/mysql.md)
   * [MongoDB](db/mongodb.md)
   * [Interbase](db/interbase.md)
+  * [Postgres](db/postgres.md)
 * [MBAAS](mbaas/README.md)
   * [StrongLoop](mbaas/strongloop.md)
 * [Frameworks](dev-frameworks/README.md)
