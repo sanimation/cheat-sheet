@@ -1,20 +1,56 @@
 # PM2 CheatSheet
-## Fork mode
-pm2 start app.js --name my-api # Name process
+## Start
+### Fork mode
 
-## Cluster mode
-pm2 start app.js -i 0        # Will start maximum processes with LB depending on available CPUs
-pm2 start app.js -i max      # Same as above, but deprecated.
+```
+$ pm2 start app.js --name my-api
+```
+
+### Cluster mode
+Will start maximum processes with LB depending on available CPUs
+
+```
+$ pm2 start app.js -i 0
+
+```
+
+Same as above, but deprecated.
+
+```
+$ pm2 start app.js -i max
+```
 
 ## Listing
 
-pm2 list               # Display all processes status
-pm2 jlist              # Print process list in raw JSON
-pm2 prettylist         # Print process list in beautified JSON
+Display all processes status
 
-pm2 describe 0         # Display all informations about a specific process
+```
+$ pm2 list
+```
 
-pm2 monit              # Monitor all processes
+Print process list in raw JSON
+
+```
+$ pm2 jlist 
+```
+
+Print process list in beautified JSON
+
+```
+$ pm2 prettylist
+```
+
+Display all informations about a specific process
+
+```
+$ pm2 describe 0
+```
+
+Monitor all processes
+
+```
+$ pm2 monit
+```
 
 ## Logs
 
