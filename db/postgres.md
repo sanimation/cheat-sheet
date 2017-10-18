@@ -1,4 +1,4 @@
-# Commandes
+# Postgres CheatSheet
 ## Mode ligne de commande
 Se connecter à la base via psql
 
