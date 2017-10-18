@@ -25,7 +25,7 @@ $ sudo docker attach <container-name>
 
 
 ```
-$ root@665b4a1e17b6:/# 
+$ root@<container-id>:/# 
 ```
 
 UPDATE: (docker >= 1.3) Thanks to WiR3D user who suggested another way to get container's shell. If we use attach we can use only one instance of shell. So if we want open new terminal with new instance of container's shell, we just need run the following:
