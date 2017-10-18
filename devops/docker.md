@@ -1,3 +1,13 @@
+# Commandes
+
+## Exécuter une commande
+
+```
+docker exec -it <container-id>
+
+```
+
+
 # Docker attach
 
 The answer is docker's attach command. So for my example above the solution will:
