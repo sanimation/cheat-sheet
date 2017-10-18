@@ -1,26 +1,34 @@
 # Docker CheatSheet
 
-################
-#### IMAGES ####
-################
+## IMAGES
 
-# Rechercher Images Dans Le Repo Docker Public
-docker search image_name:stable
+### Rechercher Images Dans Le Repo Docker Public
 
-# Charger Image Debian:Stable depuis Le Repo Docker Public
-docker pull image_name:stable
+```
+$ docker search image_name:stable
+```
 
-# Lister les images
-docker images
-docker images -a
+### Charger Image Debian:Stable depuis Le Repo Docker Public
 
-# Supprimer une image
-docker rmi image_id_or_image_name
-# Supprimer toutes les images
-docker rmi $(docker images -a -q)
+```
+$ docker pull image_name:stable
+```
+
+### Lister les images
+
+```
+$ docker images
+$ docker images -a
+```
+-a, --all            Show all images (default hides intermediate images)
+
+### Supprimer une image
+$ docker rmi image_id_or_image_name
+### Supprimer toutes les images
+$ docker rmi $(docker images -a -q)
 
 Enregistrer les modif dans l'image
-docker commit image_name Modif_name
+$ docker commit image_name Modif_name
 
 ###################
 #### CONTAINER ####
