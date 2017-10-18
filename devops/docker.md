@@ -206,9 +206,7 @@ or by Name
 
 ```
 $ sudo docker attach <container-name>
-
 ```
-
 
 ```
 $ root@<container-id>:/# 
