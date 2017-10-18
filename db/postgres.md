@@ -10,7 +10,7 @@ Se connecter à la base via psql
 SELECT datname FROM pg_database;
 ```
 
-## Backup Redash’s DB:
+## Backup DB:
 
 Uncompressed backup: 
 
@@ -24,7 +24,7 @@ Compressed backup:
 $ sudo -u <user_name> pg_dump redash | gzip > backup_filename.gz
 ```
 
-## Backup Your Redash Database and Restore It on a Different Server
+# Backup Your Redash Database and Restore It on a Different Server
 
 Note: This guide assumes that the default database name (redash, but can be postgres) has not been changed.
 
