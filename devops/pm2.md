@@ -1,4 +1,4 @@
-# CheatSheet
+# PM2 CheatSheet
 ## Fork mode
 pm2 start app.js --name my-api # Name process
 
