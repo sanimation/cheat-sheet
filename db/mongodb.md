@@ -2,7 +2,7 @@
 ## Démarrer
 `brew services start mongodb`
 
-Or, if you don't want\/need a background service
+Or, if you don't want or need a background service
 
 `mongod --config /usr/local/etc/mongod.conf`
 
