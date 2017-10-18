@@ -4,6 +4,12 @@ Se connecter à la base via psql
 
 `$ psql -U <user_name>`
 
+## Lister les bases
+
+```
+SELECT datname FROM pg_database;
+```
+
 ## Backup Your Redash Database and Restore It on a Different Server
 
 Note: This guide assumes that the default database name (redash, but can be postgres) has not been changed.
