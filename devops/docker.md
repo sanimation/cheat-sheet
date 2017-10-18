@@ -43,37 +43,66 @@ $ docker commit image_name Modif_name
 
 ## CONTAINER
 
-### Lister ts les conteneurs
-docker ps -a
-docker ps -l 
+### Lister tous les conteneurs
 
-### Lister conteneur actifs
-docker ps
+```
+$ docker ps -a
+$ docker ps -l 
+```
+
+--all , -a		Show all containers (default shows just running)
+--latest , -l		Show the latest created container (includes all states
+
+### Lister les conteneurs actifs
+
+```
+$ docker ps
+```
 
 ### Stopper un conteneur efficlloud-00
-docker stop efficlloud-00
+
+```
+$ docker stop efficlloud-00
+```
 
 ### Mettre en pause un conteneur efficlloud-00
-docker pause efficlloud-00
 
-### supprimer un conteneur efficloud-00
-docker rm efficloud-01
+```
+$ docker pause efficlloud-00
+```
 
-supprimer tous les conteneurs
-docker rm $(docker ps -a -q)
+### Supprimer un conteneur efficloud-00
 
-Détail sur un conteneur
-docker inspect "container_id"
+```
+$ docker rm efficloud-01
+```
 
+### Supprimer tous les conteneurs
+
+```
+$ docker rm $(docker ps -a -q)
+```
+
+### Détail sur un conteneur
+
+```
+$ docker inspect "container_id"
+```
 
 ### Lancer un container de nom efficloud-01 depuis l'image efficloud_template en mode interactif avec renvoi de port 22
-docker run -i --name efficloud-01 -p 2221:22 -t efficloud_template /bin/bash
+
+```
+$ docker run -i --name efficloud-01 -p 2221:22 -t efficloud_template /bin/bash
+```
 
 ### Lancer un container de nom efficloud-02 depuis l'image efficloud_template en mode daemon avec renvoi de port 22
-docker run -d --name efficloud-02 -p 2222:22 efficloud_template
+
+```
+$ docker run -d --name efficloud-02 -p 2222:22 efficloud_template
+```
 
 ### Lancer un container de nom efficloud-03 depuis l'image efficloud_template en mode daemon avec ....
-docker run -d -P --name efficloud-03 efficloud_template
+$ docker run -d -P --name efficloud-03 efficloud_template
 
 ### Savoir sur quel port du host est redirigé le port 22 du Container efficloud-03
 docker port efficloud-03 22
