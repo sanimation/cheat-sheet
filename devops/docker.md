@@ -23,12 +23,23 @@ $ docker images -a
 -a, --all            Show all images (default hides intermediate images)
 
 ### Supprimer une image
+
+```
 $ docker rmi image_id_or_image_name
+```
+
 ### Supprimer toutes les images
+
+```
 $ docker rmi $(docker images -a -q)
+```
+-q, --quiet          Only show numeric IDs
 
 Enregistrer les modif dans l'image
+
+```
 $ docker commit image_name Modif_name
+```
 
 ###################
 #### CONTAINER ####
