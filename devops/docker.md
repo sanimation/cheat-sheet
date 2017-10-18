@@ -41,24 +41,22 @@ Enregistrer les modif dans l'image
 $ docker commit image_name Modif_name
 ```
 
-###################
-#### CONTAINER ####
-###################
+## CONTAINER
 
-#Lister ts les conteneurs
+### Lister ts les conteneurs
 docker ps -a
 docker ps -l 
 
-# Lister conteneur actifs
+### Lister conteneur actifs
 docker ps
 
-# Stopper un conteneur efficlloud-00
+### Stopper un conteneur efficlloud-00
 docker stop efficlloud-00
 
-# Mettre en pause un conteneur efficlloud-00
+### Mettre en pause un conteneur efficlloud-00
 docker pause efficlloud-00
 
-# supprimer un conteneur efficloud-00
+### supprimer un conteneur efficloud-00
 docker rm efficloud-01
 
 supprimer tous les conteneurs
@@ -68,42 +66,45 @@ Détail sur un conteneur
 docker inspect "container_id"
 
 
-# Lancer un container de nom efficloud-01 depuis l'image efficloud_template en mode interactif avec renvoi de port 22
+### Lancer un container de nom efficloud-01 depuis l'image efficloud_template en mode interactif avec renvoi de port 22
 docker run -i --name efficloud-01 -p 2221:22 -t efficloud_template /bin/bash
 
-# Lancer un container de nom efficloud-02 depuis l'image efficloud_template en mode daemon avec renvoi de port 22
+### Lancer un container de nom efficloud-02 depuis l'image efficloud_template en mode daemon avec renvoi de port 22
 docker run -d --name efficloud-02 -p 2222:22 efficloud_template
 
-# Lancer un container de nom efficloud-03 depuis l'image efficloud_template en mode daemon avec ....
+### Lancer un container de nom efficloud-03 depuis l'image efficloud_template en mode daemon avec ....
 docker run -d -P --name efficloud-03 efficloud_template
 
-# savoir sur quel port du host est redirigé le port 22 du Container efficloud-03
+### Savoir sur quel port du host est redirigé le port 22 du Container efficloud-03
 docker port efficloud-03 22
 
 Lancer un container de nom efficloud-04 depuis l'image efficloud_template en mode interactif avec renvoi de port 22 et mount vol
 docker run -i --name efficloud-04 -p 2224:22 -v /DockerData:/datapps -t efficloud_template /bin/bash
 
-# monter dossier /export de host dans dossier /datapps du container
+### Monter dossier /export de host dans dossier /datapps du container
 docker run -d -p 2222:22 -v /export:/datapps container_id
 
-# Voir la sortie d'un container executer en mode Detached
+### Voir la sortie d'un container executer en mode Detached
 docker logs [Container iD]
 docker logs -f [Container iD]
 docker logs container_name | tail
 
 docker -diff container
 
-# S'attacher à un container
+### S'attacher à un container
 docker attach efficloud-01
 docker attach debian-01 —sig-proxy=false 75
 
-# Se détacher du container
+### Se détacher du container
 Ctrl-p + Ctrl-q
 
-# Se connecter en SSH au container efficloud-04
-ssh -p 2224 root@localhost
+### Se connecter en SSH au container efficloud-04
 
-# Lancer une commande sur un container actif
+```
+$ ssh -p 2224 root@localhost
+```
+
+### Lancer une commande sur un container actif
 docker exec -d container_name touch /tmp/myfile
 docker exec -it container_name /bin/bash
 
@@ -135,11 +136,6 @@ DIFF:
 #Contruire son Image 
 docker build -t efficloud_template -f dockerfile . (Le Point est important à la fin)
 
-## Exécuter une commande
-
-```
-$ docker exec -it <container-id> cmd
-```
 
 ## Docker attach
 
