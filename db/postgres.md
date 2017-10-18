@@ -6,7 +6,7 @@ Se connecter à la base via psql
 
 ## Backup Your Redash Database and Restore It on a Different Server
 
-Note: This guide assumes that the default database name (redash) has not been changed.
+Note: This guide assumes that the default database name (redash, but can be postgres) has not been changed.
 
 1. Check the size of your redash database. This can be done by creating a query within redash itself against the ‘Redash metadata’ data source.
 
