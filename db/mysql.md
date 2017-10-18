@@ -59,10 +59,7 @@ FLUSH PRIVILEGES;
 
 4 - restart mysql
 
-```
- /etc/init.d/mysql restart
-
-```
+`/etc/init.d/mysql restart`
 
 ## Importer un fichier csv
 
