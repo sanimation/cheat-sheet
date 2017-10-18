@@ -1,11 +1,10 @@
-# Commandes
+# Docker CheatSheet
 
 ## Exécuter une commande
 
 ```
 $ docker exec -it <container-id> cmd
 ```
-
 
 ## Docker attach
 
@@ -45,7 +44,9 @@ $ sudo docker exec -i -t <container-name> /bin/bash
 $ root@<container-id>:/#
 ```
 
-# Deploying changes
+# Docker Compose CheatSheet
+
+## Deploying changes
 When you make changes to your app code, you’ll need to rebuild your image and recreate your app’s containers. To redeploy a service called web, you would use:
 
 `$ docker-compose build web`
