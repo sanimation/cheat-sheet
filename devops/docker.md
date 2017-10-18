@@ -28,18 +28,18 @@ $ sudo docker attach <container-name>
 $ root@<container-id>:/# 
 ```
 
-UPDATE: (docker >= 1.3) Thanks to WiR3D user who suggested another way to get container's shell. If we use attach we can use only one instance of shell. So if we want open new terminal with new instance of container's shell, we just need run the following:
+UPDATE: (docker >= 1.3) If we use attach we can use only one instance of shell. So if we want open new terminal with new instance of container's shell, we just need run the following:
 
 By ID
 
 ```
-$ sudo docker exec -i -t 665b4a1e17b6 /bin/bash
+$ sudo docker exec -it <container-id> /bin/bash
 ```
 
 or by Name
 
 ```
-$ sudo docker exec -i -t loving_heisenberg /bin/bash
+$ sudo docker exec -i -t <container-name> /bin/bash
 ```
 
 ```
