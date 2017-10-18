@@ -54,9 +54,24 @@ $ pm2 monit
 
 ## Logs
 
-pm2 logs [--raw]       # Display all processes logs in streaming
-pm2 flush              # Empty all log file
-pm2 reloadLogs         # Reload all logs
+Display all processes logs in streaming
+
+```
+$ pm2 logs [--raw]
+```
+
+Empty all log file
+
+```
+$ pm2 flush
+
+```
+
+Reload all logs
+
+```
+$ pm2 reloadLogs
+```
 
 ## Actions
 
@@ -88,11 +103,18 @@ Ensure pm2 daemon has been launched
 $ pm2 ping
 ```
 
+Send system signal to script
 
-pm2 sendSignal SIGUSR2 my-app # Send system signal to script
-pm2 start app.js --no-daemon
-pm2 start app.js --no-vizion
-pm2 start app.js --no-autorestart
+```
+$ pm2 sendSignal SIGUSR2 my-app
+
+```
+
+```
+$ pm2 start app.js --no-daemon
+$ pm2 start app.js --no-vizion
+$ pm2 start app.js --no-autorestart
+```
 
 # Docker
 ## Useful commands
