@@ -10,17 +10,17 @@ docker exec -it <container-id>
 
 # Docker attach
 
-The answer is docker's attach command. So for my example above the solution will:
 By ID
 
 ```
-$ sudo docker attach 665b4a1e17b6
+$ sudo docker attach <container-id>
 ```
 
 or by Name
 
 ```
-$ sudo docker attach loving_heisenberg
+$ sudo docker attach <container-name>
+
 ```
 
 
