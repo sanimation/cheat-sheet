@@ -236,27 +236,38 @@ $ docker info
 ```
 
 # Upgrade Docker
-sudo apt-get upgrade docker-engine
+
+```
+$ sudo apt-get upgrade docker-engine
+```
 
 # Uninstall Docker
-sudo apt-get purge docker-engine
-sudo apt-get autoremove --purge docker-engine (suppression Docker + dépendances)
-rm -rf /var/lib/docker (Suppression  images, containers et volumes)
+
+```
+$ sudo apt-get purge docker-engine
+$ sudo apt-get autoremove --purge docker-engine (suppression Docker + dépendances)
+$ rm -rf /var/lib/docker (Suppression  images, containers et volumes)
+```
 
 # Fichier de Configuration de Docker
-cd /var/lib/docker
-vim /etc/default/docker.io
 
-#########################
-#Install Docker CentOS-7#
-#########################
+```
+$ cd /var/lib/docker
+$ vim /etc/default/docker.io
+```
 
-#Update CentOS
-sudo yum update
+# Install Docker CentOS-7
+
+# Update CentOS
+
+```
+$ sudo yum update
+```
 
 # Create file /etc/yum.repos.d/docker.repo
 
-sudo tee /etc/yum.repos.d/docker.repo <<-'EOF'
+```
+$ sudo tee /etc/yum.repos.d/docker.repo <<-'EOF'
 [dockerrepo]
 name=Docker Repository
 baseurl=https://yum.dockerproject.org/repo/main/centos/7/
@@ -264,25 +275,50 @@ enabled=1
 gpgcheck=1
 gpgkey=https://yum.dockerproject.org/gpg
 EOF
+```
 
-#Update CentOS
-sudo yum update
+# Update CentOS
 
-#Install Docker
-sudo yum install docker-engine
+```
+$ sudo yum update
+```
 
-# enable Docker service 
-sudo systemctl enable docker.service
+# Install Docker
+
+```
+$ sudo yum install docker-engine
+```
+
+
+# Enable Docker service 
+
+```
+$ sudo systemctl enable docker.service
+```
 
 # Start Docker
-sudo systemctl start docker
 
-# check docker
-sudo docker search nginx
+```
+$ sudo systemctl start docker
+```
+
+# Check docker
+
+```
+$ sudo docker search nginx
+```
 
 # Add user localadmin to docker group
-sudo usermod -aG docker localadmin
+
+```
+$ sudo usermod -aG docker localadmin
+```
 
 # Start Docker on Boot
-sudo systemctl enable docker
+
+```
+$ sudo systemctl enable docker
+```
+
+
 
