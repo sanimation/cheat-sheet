@@ -1,3 +1,3 @@
-# Ma super antisèche
+# Devops CheatSheet
 
-Contient les commandes des outils que j'utilise en dev.
+Contient les commandes des outils utilisés par les devops.

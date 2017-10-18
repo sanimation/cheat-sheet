@@ -1,4 +1,4 @@
-# GIT
+# GIT CheatSheet
 Cf. la documentation complète [içi](https://git-scm.com)
 ## Création
 Cloner un dépôt existant
