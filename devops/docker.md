@@ -3,7 +3,7 @@
 ## Exécuter une commande
 
 ```
-docker exec -it <container-id> cmd
+$ docker exec -it <container-id> cmd
 ```
 
 
