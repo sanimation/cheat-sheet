@@ -65,6 +65,12 @@ $ docker ps
 $ docker stop efficlloud-00
 ```
 
+### Arrêter tous les conteneurs
+
+```
+$ docker stop $(docker ps -a -q)
+```
+
 ### Mettre en pause un conteneur efficlloud-00
 
 ```
